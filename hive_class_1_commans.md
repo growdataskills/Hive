@@ -57,7 +57,7 @@ create table employee
 (
 id int,
 name string,
-skills array
+skills array<string>
 )
 row format delimited
 fields terminated by ','
