@@ -15,5 +15,5 @@ fields terminated by ',';
 
 describe formatted department_data;
 
-For data load from local
+#For data load from local
 load data local inpath 'file:///config/workspace/depart_data.csv' into table department_data;
