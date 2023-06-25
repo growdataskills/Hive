@@ -13,9 +13,9 @@ location string
 )
 row format serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 with serdeproperties (
-"separatorChar" = ",",
-"quoteChar" = """,
-"escapeChar" = "\"
+  'separatorChar' = ',',
+  'quoteChar' = '\"',
+  'escapeChar' = '\\'
 )
 stored as textfile
 tblproperties ("skip.header.line.count" = "1");
