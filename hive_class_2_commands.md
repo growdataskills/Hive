@@ -28,7 +28,7 @@ load data local inpath 'file:///home/shashankmmishra/csv_file.csv' into table cs
 create table json_table
 ( name string,
 id int,
-skills array
+skills array <string>
 )
 row format serde 'org.apache.hadoop.hive.serde2.JsonSerDe'
 stored as textfile;
